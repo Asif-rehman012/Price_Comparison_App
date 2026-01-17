@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #0f172a; /* dark blue */
+  color: #e5e7eb;
+}
+
+.app {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+
+.search {
+  width: 100%;
+  padding: 14px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  margin-bottom: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 15px;
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.price {
+  font-weight: bold;
+  color: #22c55e;
+  margin-bottom: 10px;
+}
+
+.card a {
+  text-decoration: none;
+  color: #38bdf8;
+  font-weight: bold;
+}
+
+/* ===== Attractive Search Bar ===== */
+
+.search-input {
+  width: 100%;
+  max-width: 520px;
+  display: block;
+  margin: 0 auto 30px auto;
+
+  padding: 14px 22px;
+  font-size: 1rem;
+
+  border-radius: 9999px; /* fully rounded */
+  border: none;
+  outline: none;
+
+  background: #1e293b;
+  color: #e5e7eb;
+
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  transition: all 0.25s ease;
+}
+
+/* Placeholder */
+.search-input::placeholder {
+  color: #94a3b8;
+}
+
+/* Focus effect */
+.search-input:focus {
+  background: #020617;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.6);
+}
+
+/* Hover effect */
+.search-input:hover {
+  transform: scale(1.01);
+}
+
+
