@@ -150,8 +150,8 @@ Open a Pull Request
 - [Asif Rehman](https://github.com/Asif-rehman012)
 
 
-## License
+## 📜 License
 
-This project is licensed under the MIT License.
-[MIT](https://choosealicense.com/licenses/mit/)
+This project is licensed under the [MIT License](LICENSE).
+
 
